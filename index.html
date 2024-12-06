@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>LogIn</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: linen;
+        }
+
+        .container {
+            width: 40%;
+            margin: 200px auto;
+            padding: 5% 0%; 
+            box-shadow: 0px 0px 10px rgb(255, 44, 44);
+        }
+
+        .size {
+            height: 30px;
+            width: 200px;
+            margin-bottom: 5%;
+        }
+
+        button {
+            padding: 2% 5%;
+            margin-top: 5%;
+            border: none;
+            background-color: grey;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .form{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="form">
-            <form action="#">
-                <label for="user">Username</label>
-                <input class="input" type="text" id="user" placeholder="enter your Username"><br>
-                <label for="pass">Password</label>
-                <input class="input" type="password" id="pass" placeholder="enter your password"><br>
+        <form action="#">
+            <div class="form">
+                <label for="username">Username:</label>
+                <input class="size" type="text" id="username" required><br>
+                <label for="password">Password :</label>
+                <input class="size" type="password" id="password"><br>
                 <label for="rem">Remember Me</label>
                 <input type="checkbox" id="rem"><br>
-                <button>Login</button>
-                <button>Sign Up</button>
-            </form>
-        </div>
+                <button>login</button>
+                <button>signup</button>
+            </div>
+
+        </form>
     </div>
 </body>
+
 </html>
